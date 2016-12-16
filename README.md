@@ -31,6 +31,7 @@ library(plotly)
 require(rbokeh)
 ```
 ###**Tab 1: Bar Graph Using Shiny and Plotly HTML Widget**
+
 -----------------------------------------------------------------------
 ### Bar Graph: Depression v. Annual Income by Marital Status
 ```{r, echo=FALSE}
