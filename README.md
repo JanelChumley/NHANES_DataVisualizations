@@ -4,7 +4,7 @@ The data comes from the National Health and Nutrition Examination Survey (NHANES
 
 Various R libraries including shiny, ggplot2, and plotly were used to create these dynamic data visualizations.
 
-Please click on the following link to view the Flexdasboard to view the interactive plots.
+Please click on the following link to view the Flexdasboard to view the interactive plots:
 [Flex Dashboard Link](https://janelchumley.shinyapps.io/FlexDashboard/)
 
 ##**Flexdashboard Storyboard Creation**
