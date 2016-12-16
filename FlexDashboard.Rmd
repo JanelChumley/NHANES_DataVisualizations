@@ -8,7 +8,6 @@ runtime: shiny
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
-require("jsonlite")
 require("RCurl")
 require("dplyr")
 require("plyr")
@@ -71,7 +70,7 @@ output$boxplot<-renderPlotly({
   df$scode<-mapvalues(df$BETTER_DEAD, from = c("Nearly every day", "More than half the days", "Several days", "Never"), to=c("1", "2", "3", "4"))
       df <-df %>%
       dplyr::select(GENDER, RATIO_INCOME_POVERTY, BETTER_DEAD)%>%
-      dplyr::filter(GENDER%in%c(input$gender), RATIO_INCOME_POVERTY!="null",BETTER_DEAD!="null")%>%
+      dplyr::filter(GENDER%in%c(input$gender), RATIO_INCOME_POVERTY!="null",BETTER_DEAD%in%c("More than half the days", "Nearly every day", "Several days", "Never"))%>%
       dplyr::group_by(GENDER, RATIO_INCOME_POVERTY, BETTER_DEAD)
       p<-ggplot(data= df, aes(x =BETTER_DEAD, y=as.numeric(as.character(RATIO_INCOME_POVERTY)), fill=BETTER_DEAD)) + geom_boxplot() + xlim(c("Nearly every day", "More than half the days", "Several days", "Never")) + ylim(0,5) + xlab("Feels Suicidal") + ylab("Ratio Income Poverty") + theme(legend.position="none") 
 ggplotly(p)%>%layout(margin=list(b=150))
