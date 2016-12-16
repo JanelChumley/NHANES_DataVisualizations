@@ -8,7 +8,7 @@ Please click on the following link to view the interactive plots:
 [Flex Dashboard Link](https://janelchumley.shinyapps.io/FlexDashboard/)
 
 ##**Flexdashboard Storyboard Creation**
-**Creating the markdown file**
+
 Step 1: Create an R markdown file with the flexdashboard::flex_dashboard output format. 
 
 Step 2: Add the storyboard: true option to the dashboard and runtime: shiny.
