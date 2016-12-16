@@ -1,5 +1,5 @@
 # NHANES_DataVisualizations
-[Flex Dashboard Here](https://janelchumley.shinyapps.io/FlexDashboard/)
+[Flex Dashboard Link](https://janelchumley.shinyapps.io/FlexDashboard/)
 ##**Data Source**
 The data comes from the National Health and Nutrition Examination Survey (NHANES), from the 2013-14 session. NHANES is designed to assess the health and nutritional status of adults and children in the U.S., and is a major program of the National Center for Health Statistics (NCHS). The survey examines a nationally representative sample of about 5,000 people each year; they are in counties across the country, 15 of which are visited each year. We downloaded six tables of data: responses to questions about alcohol use, demographics, drug use, income, mental health, and occupation. The dataset can be found [here](https://wwwn.cdc.gov/Nchs/Nhanes/Search/DataPage.aspx?Component=Demographics&CycleBeginYear=2013). 
 
