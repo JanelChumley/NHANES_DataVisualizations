@@ -33,9 +33,7 @@ require(rbokeh)
 ###**Tab 1: Bar Graph Using Shiny and Plotly HTML Widget**
 -----------------------------------------------------------------------
 ### Bar Graph: Depression v. Annual Income by Marital Status
-![](bargraph.png)
 ```{r, echo=FALSE}
-#Here is the server script
 selectInput(input = "marital",
                      label = "Select a Martial Status: ",
                      c("Divorced", "Living with partner", "Married", "Never married", "Separated", "Widowed"), selected = "Married")
@@ -56,9 +54,9 @@ df<-merge(df1, df2)
 ggplotly(p)%>%layout(margin=list(b=150))
 })
 ```
+![](bargraph.png)
 ###**Tab 2: Box Plot Using Shiny and Plotly HTML Widget**
 ### Box Plot: Ratio Income Poverty v. Severe Depression by Gender
-![](boxplot.png)
 ```{r, echo=FALSE}
 df1<- read.csv("mentalHealth.reformatted.csv", stringsAsFactors = FALSE)
 df2<- read.csv("demographics.reformatted.csv", stringsAsFactors = FALSE)
@@ -82,3 +80,4 @@ ggplotly(p)%>%layout(margin=list(b=150))
     
 
 ```
+![](boxplot.png)
