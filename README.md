@@ -54,7 +54,7 @@ df<-merge(df1, df2)
 ggplotly(p)%>%layout(margin=list(b=150))
 })
 ```
-Here is what the plot looks like in the Flexdashboard:
+Here is an image of the plot in the Flexdashboard:
 ![](bargraph.png)
 ###**Tab 2: Box Plot Using Shiny and Plotly HTML Widget**
 ### Box Plot: Ratio Income Poverty v. Severe Depression by Gender
@@ -81,5 +81,5 @@ ggplotly(p)%>%layout(margin=list(b=150))
     
 
 ```
-Here is what the plot looks like in the Flexdashboard:
+Here is an image of the plot in the Flexdashboard:
 ![](boxplot.png)
