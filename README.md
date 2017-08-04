@@ -1,13 +1,13 @@
 # Mental Health, Income, and Marriage Status 
-##**Data Source**
+## **Data Source**
 The data comes from the National Health and Nutrition Examination Survey (NHANES), from the 2013-14 session. NHANES is designed to assess the health and nutritional status of adults and children in the U.S., and is a major program of the National Center for Health Statistics (NCHS). The survey examines a nationally representative sample of about 5,000 people each year; they are in counties across the country, 15 of which are visited each year. We downloaded six tables of data: responses to questions about alcohol use, demographics, drug use, income, mental health, and occupation. The dataset can be found [here](https://wwwn.cdc.gov/Nchs/Nhanes/Search/DataPage.aspx?Component=Demographics&CycleBeginYear=2013). 
 
 Various R libraries including shiny, ggplot2, and plotly were used to create these dynamic data visualizations.
-##**Flexdashboard**
+## **Flexdashboard**
 Please click on the following link to view the interactive plots:
 [flexdashboard](https://janelchumley.shinyapps.io/FlexDashboard/)
 
-##**Flexdashboard Storyboard Creation**
+## **Flexdashboard Storyboard Creation**
 
 Step 1: Create an R markdown file with the flexdashboard::flex_dashboard output format. 
 
@@ -28,7 +28,7 @@ library(shiny)
 require(car)
 library(plotly)
 ```
-###**Tab 1: Bar Graph Using Shiny and Plotly HTML Widget**
+### **Tab 1: Bar Graph Using Shiny and Plotly HTML Widget**
 -----------------------------------------------------------------------
 ### Bar Graph: Depression v. Annual Income by Marital Status
 ```{r, echo=FALSE}
@@ -55,7 +55,7 @@ ggplotly(p)%>%layout(margin=list(b=150))
 
 Here is an image of the plot in the Flexdashboard:
 ![](bargraph.png)
-###**Tab 2: Box Plot Using Shiny and Plotly HTML Widget**
+### **Tab 2: Box Plot Using Shiny and Plotly HTML Widget**
 ### Box Plot: Ratio Income Poverty v. Suicidal Thoughts by Gender
 ```{r, echo=FALSE}
 selectInput(input = "gender",
